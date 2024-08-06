@@ -39,7 +39,7 @@ export default {
   async created() {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/voter-cards', {
+      const response = await axios.get('https://vote-z5vc.onrender.com/api/voter-cards', {
         headers: {
           Authorization: `Bearer ${token}`
         }

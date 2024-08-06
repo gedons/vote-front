@@ -36,7 +36,7 @@ export default {
     async createVoterCard() {
       const token = localStorage.getItem('token');
       try {
-        const response = await axios.post('http://localhost:5000/api/voter-cards', {
+        const response = await axios.post('https://vote-z5vc.onrender.com/api/voter-cards', {
           address: this.address,
           dob: this.dob,
           voterId: this.voterId
